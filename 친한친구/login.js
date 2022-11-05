@@ -42,6 +42,10 @@ function check(form)
       alert("방문을 환영합니다!")
       window.open("친친.html")
   }
+  else if(form.userid.value="전예진"&&form.userpassword.value=="1621"){
+    alert("방문을 환영합니다!")
+    window.open("친친.html")
+}
     else{
         alert("이름이나 전화번호가 잘못됨")
     }
