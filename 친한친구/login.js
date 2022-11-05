@@ -22,7 +22,7 @@
 window.addEventListener("keypress", plz, false);
 function plz(key){
    if (key.keyCode == "13"){
-       alert("아직 엔터키 작동 안됨")
+       alert("아직 엔터키 작동 안됨, 로그인 버튼으로 이동바람")
    }
 }
 
@@ -31,22 +31,29 @@ function plz(key){
 function check(form)
 {
     if(form.userid.value=="김동하"&&form.userpassword.value=="2885"){
-        alert("방문을 환영합니다!")
+        alert("동개, 방문을 환영합니다")
         window.open('친친.html')
     }
-    else if(form.userid.value="현동욱"&&form.userpassword.value=="1152"){
-      alert("방문을 환영합니다!")
-        window.open("친친.html")
-    }
     else if(form.userid.value="박유찬"&&form.userpassword.value=="0175"){
-      alert("방문을 환영합니다!")
+      alert("박유찬, 방문을 환영합니다!")
       window.open("친친.html")
   }
   else if(form.userid.value="전예진"&&form.userpassword.value=="1621"){
-    alert("방문을 환영합니다!")
+    alert("전예진, 방문을 환영합니다!")
     window.open("친친.html")
 }
+
+
     else{
-        alert("이름이나 전화번호가 잘못됨")
+      alert("등록이 되어있지 않음")
+      const YesOrNo = confirm("회원가입하러 가실건가요?")
+      if(YesOrNo){
+        alert("연락바랍니다")
+        window.open("../동개연락수단/연락수단.html")
+      }
+      else{
+        alert("취소됨")
+      }
+
     }
 }
