@@ -34,14 +34,19 @@ function check(form)
         alert("동개, 방문을 환영합니다")
         window.open('친친.html')
     }
-    else if(form.userid.value="박유찬"&&form.userpassword.value=="0175"){
+    else if(form.userid.value=="박유찬"&&form.userpassword.value=="0175"){
       alert("박유찬, 방문을 환영합니다!")
       window.open("친친.html")
-  }
-  else if(form.userid.value="전예진"&&form.userpassword.value=="1621"){
-    alert("전예진, 방문을 환영합니다!")
-    window.open("친친.html")
-}
+    }
+    else if(form.userid.value=="전예진"&&form.userpassword.value=="1621"){
+       alert("전예진, 방문을 환영합니다!")
+       window.open("친친.html")
+    }
+    else if(form.userid.value=="현동욱"&&form.userpassword.value=="1152"){
+      alert("현동욱, 방문을 환영합니다!")
+      window.open("친친.html")
+   }
+    
 
 
     else{
