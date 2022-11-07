@@ -70,10 +70,13 @@ function check(form)
       window.open("친친.html")
    }
    else if(form.userid.value=="이윤지"&&form.userpassword.value=="4588"){
-    alert("현동욱, 방문을 환영합니다!")
+    alert("이윤지, 방문을 환영합니다!")
     window.open("친친.html")
  }
-
+ else if(form.userid.value=="박제희"&&form.userpassword.value=="7732"){
+  alert("박제희, 방문을 환영합니다!")
+  window.open("친친.html")
+}
 
     else{
       alert("등록이 되어있지 않음")
