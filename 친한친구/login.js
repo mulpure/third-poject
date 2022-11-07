@@ -18,11 +18,11 @@
 //}
 //inputTest.addEventListener('keydown', hand)
 
+//window.addEventListener("keypress", plz, false);
 
-window.addEventListener("keypress", plz, false);
-function plz(key){
+/* function plz(key){
    if (key.keyCode == "13"){
-       alert("아직 엔터키 작동 안됨, 로그인 버튼으로 이동바람")
+      alert("아직 엔터키 작동 안됨, 로그인 버튼으로 이동바람")
    }
 }
 
@@ -38,15 +38,41 @@ function check(form)
       alert("박유찬, 방문을 환영합니다!")
       window.open("친친.html")
     }
-    else if(form.userid.value=="전예진"&&form.userpassword.value=="1621"){
-       alert("전예진, 방문을 환영합니다!")
-       window.open("친친.html")
+    else if(form.userid.value=="현동욱"&&form.userpassword.value=="1152"){
+      alert("현동욱, 방문을 환영합니다!")
+      window.open("친친.html")
+   }
+   else if(form.userid.value=="이윤지"&&form.userpassword.value=="4588"){
+    alert("현동욱, 방문을 환영합니다!")
+    window.open("친친.html")
+ }
+ */
+
+
+
+
+
+
+
+
+function check(form)
+{
+    if(form.userid.value=="김동하"&&form.userpassword.value=="2885"){
+        alert("동개, 방문을 환영합니다")
+        window.open('친친.html')
+    }
+    else if(form.userid.value=="박유찬"&&form.userpassword.value=="0175"){
+      alert("박유찬, 방문을 환영합니다!")
+      window.open("친친.html")
     }
     else if(form.userid.value=="현동욱"&&form.userpassword.value=="1152"){
       alert("현동욱, 방문을 환영합니다!")
       window.open("친친.html")
    }
-    
+   else if(form.userid.value=="이윤지"&&form.userpassword.value=="4588"){
+    alert("현동욱, 방문을 환영합니다!")
+    window.open("친친.html")
+ }
 
 
     else{
