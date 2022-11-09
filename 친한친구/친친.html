@@ -5,67 +5,98 @@
 <title> 친한친구 </title>
 <meta name="naver-site-verification" content="f11683a69ff2672d92516c2ebd1814452cfc442c" />
 <style>
-
-.baro {
-    width: 100%;
-    height: 30%;
-    background-color: rgb(255, 200, 0);
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 0 auto;
+  html{min-height: 100%;}
+  body{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+  }
+   body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+   a{
+    color: inherit;
+    text-decoration: none;
+   }
+   .menubox,ul{
+    background-color: antiquewhite;
+   }
+   .menubox>ul {
     display: inline-block;
-    float: none;}
-.mainbaro { width: 20%; float: left; display: inline-block;  color: rgb(136, 24, 241); background-color: rgb(159, 228, 235); font-weight: bolder;}
-.instabaro { width: 20%; float: left; display: inline-block; color: rgb(115, 1, 255); background-color: rgb(171, 246, 191); font-weight: bolder; }
-.birthbaro{ width: 20%; float: left; display: inline-block; color: rgb(137, 0, 187); background-color: rgb(215, 183, 231);  font-weight: bolder;}
+   }
+   .menubox{
+    position: fixed;
+    width: 100%;
+    text-align: left;
+   }
+   .menubox>ul>li{ display: inline-block; }
 
-#fixed_layer1 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:30px; right:20px;
-}
-#fixed_layer2 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:90px; right:20px;
-}
-
-body {margin: 0%; background-color: rgb(155, 193, 226);}
-
-
+   .menubox ul>li>a{ 
+    display: block;
+    font-weight: bold;
+    padding: 20px;
+   }
+   .menubox>ul li:hover>a{
+    background-color: black;
+    color: white;
+   }
+   .menubox>ul ul{
+    position: absolute;
+    display: none;
+   }
+   .menubox ul>li:hover>ul{
+    display: block;
+   }
+  
+   .logo{
+    font-weight: bolder;
+    font-size: larger;
+   }  
 
 </style>
 
 <!------------------------------------------>
-
 </head>
 
 <body>
-    
-    <div class="baro">     
-        <a href="../index.html"><div class="mainbaro">메인 🏠</div></a>
-        <a href="../별스타그램/star.html"><div class="instabaro">연락하기 🏠</div></a>
-        <a href="../생일/birth.html"><div class="birthbaro">생일 🏠</div></a>
-        <a class="welcome"> 안녕 친구들 :)</a>
-   </div>
-
-   <div id="fixed_layer1">
-    <p><a href="../친한친구/로그인.html"><img src="../img/오른쪽고정1.jpg" width="55" height="55" border="0" alt="로그인"></a></p>
-      </div>
-  <div id="fixed_layer2">
-    <p><a href="../index.html"><img src="../img/오른쪽고정2.jpg" width = "55" height="55" border="0" alt="로그인"></a></p>
-      </div>
-
-   
-
-
-
-  <h1 class="h">아직 업데이트 예정</h1><br>
-  <h2 class="h">여기 뭘 넣으면 좋을까</h2>
-
-
+  <div class="header">
+    <nav class="menubox">
+    <ul>
+      <li class="logo"><a href="../index.html">&nbsp; 동개의 호야&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      <li>
+        <a href="#"> 메인 홈</a>
+      <ul>
+        <li><a href="../동개연락수단/연락수단.html">연락 홈</a></li>
+        <li><a href="../생일/birth.html">생일 홈</a></li>
+        <li><a href="../별스타그램/star.html">SNS 홈</a></li>
+      </ul></li>
+      <li>
+       <a href="#"> 1차 메뉴2</a>
+       <ul>
+        <li><a href="#">2차 메뉴1</a></li>
+        <li><a href="#">2차 메뉴1</a></li>
+        <li><a href="#">2차 메뉴1</a></li>
+       </ul></li>
+      <li>
+        <a href="#"> 1차 메뉴3</a>
+        <ul>
+          <li><a href="#">2차 메뉴1</a></li>
+          <li><a href="#">2차 메뉴1</a></li>
+          <li><a href="#">2차 메뉴1</a></li>
+        </ul></li>
+      <li>
+        <a href="#"> 1차 메뉴4</a>
+        <ul>
+          <li><a href="#">2차 메뉴1</a></li>
+          <li><a href="#">2차 메뉴1</a></li>
+          <li><a href="#">2차 메뉴1</a></li>
+        </ul></li>
+    </ul>
+    </nav>
+  </div>
  
+
+
+
 </body>
 </html>
