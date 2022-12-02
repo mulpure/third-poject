@@ -15,16 +15,15 @@ body, ul, li {
    }
    .menubox,ul{
     background-color: antiquewhite;
-    z-index: 999;
    }
    .menubox>ul {
     display: inline-block;
    }
-   .menubox{
+   .menubox{   z-index: 1000;
+    color: black;
     position: fixed;
     width: 100%;
     text-align: left;
-    z-index: 999;
    }
    .menubox>ul>li{ display: inline-block; }
 
@@ -34,7 +33,7 @@ body, ul, li {
     padding: 20px;
    }
    .menubox>ul li:hover>a{
-    background-color: rgb(254, 175, 40);
+    background-color: rgb(248, 167, 54);
     color: white;
    }
    .menubox>ul ul{
@@ -42,6 +41,8 @@ body, ul, li {
     display: none;
    }
    .menubox ul>li:hover>ul{
+    color: aliceblue;
+    background-color: darkolivegreen;
     display: block;
    }
   
@@ -149,12 +150,14 @@ body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
             <li><a href="https://asked.kr/kimdongdog">애스크</a></li>
            </ul></li>
            <li> 
-           <a href="#"> 생일 홈</a>
-           <ul>
-            <li><a href="../생일/birth.html">생일 🏠</a></li>
-             <li><a href="../생일/내생일/mybirth.html">🎉 0424</a></li>
-             <li><a href="#">🎉 0730</a></li>
-           </ul></li>
+            <a href="#"> 생일 홈</a>
+            <ul>
+              <li><a href="../생일/birth.html">생일 🏠</a></li>
+              <li><a href="../생일/14.html">🎉1월~3월</a></li>
+              <li><a href="../생일/46.html">🎉4월~6월</a></li>
+              <li><a href="../생일/79.html">🎉7월~9월</a></li>
+              <li><a href="../생일/10.html">🎉10월~12월</a></li>
+            </ul></li>
           <li>
             <a href="#">기타</a>
             <ul>

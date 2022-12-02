@@ -17,56 +17,23 @@
 .p{font-weight: bolder; text-align: center; width: 24%; display: inline-block; margin-left: 6%; background-color: rgb(17, 104, 107); color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255);}
 
 
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-   }
-   a{
-    color: inherit;
-    text-decoration: none;
-   }
-   .menubox,ul{
-    background-color: antiquewhite;
-   }
-   .menubox>ul {
-    display: inline-block;
-   }
-   .menubox{
-    color: black;
-    position: fixed;
-    width: 100%;
-    text-align: left;
-   }
-   .menubox>ul>li{ display: inline-block; }
-
-   .menubox ul>li>a{ 
-    display: block;
-    font-weight: bold;
-    padding: 20px;
-   }
-   .menubox>ul li:hover>a{
-    background-color: rgb(248, 167, 54);
-    color: white;
-   }
-   .menubox>ul ul{
-    position: absolute;
-    display: none;
-   }
-   .menubox ul>li:hover>ul{
-    display: block;
-   }
-  
-   .logo{
-    font-weight: bolder;
-    font-size: larger;
-   }  
+body, ul, li { margin: 0; padding: 0; list-style: none; }
+   a{ color: inherit; text-decoration: none;}
+   .menubox,ul{ background-color: antiquewhite; z-index: 999; color: #FFF0F5;}
+   .menubox>ul { display: inline-block; background-image: linear-gradient(to left, #fbc2eb 0%, #a6c1ee 100%);}
+   .menubox{ color: rgb(0, 0, 0); position: fixed;  width: 100%;  text-align: left; z-index: 999; background-image: linear-gradient(to right, #fbc2eb 100%, #a6c1ee 0%);}
+   .menubox>ul>li{ display: inline-block; color:black;}
+   .menubox ul>li>a{   display: block;  font-weight: bold;  padding: 20px; }
+   .menubox>ul li:hover>a{ background-color: rgb(254, 175, 40); color: white; }
+   .menubox>ul ul{  position: absolute;  display: none; }
+   .menubox ul>li:hover>ul{  background-color: darkolivegreen;  display: block; }
+   .logo{  font-weight: bolder;  font-size: larger; }  
 
 
 
 body {margin: 0%; background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%); color: rgb(206, 22, 129); }
 html {min-height: 100%;}
-h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center;}
+h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: black;}
 .title {margin: 0%; width: 100%; text-align: center;}
 
 #fixed_layer1 {
@@ -90,6 +57,8 @@ bottom:90px; right:20px;
   font-weight: bolder;
   font-size: larger;
 }
+
+
 
 </style>
 </head>
@@ -117,8 +86,10 @@ bottom:90px; right:20px;
        <a href="#"> 생일 홈</a>
        <ul>
          <li><a href="./생일/birth.html">생일 🏠</a></li>
-         <li><a href="./생일/내생일/mybirth.html">🎉 0424</a></li>
-         <li><a href="#">🎉 0730</a></li>
+         <li><a href="./생일/14.html">🎉1월~3월</a></li>
+         <li><a href="./생일/46.html">🎉4월~6월</a></li>
+         <li><a href="./생일/79.html">🎉7월~9월</a></li>
+         <li><a href="./생일/10.html">🎉10월~12월</a></li>
        </ul></li>
       <li>
         <a href="#">기타</a>
@@ -135,6 +106,7 @@ bottom:90px; right:20px;
 
   <div class="title">
     <h1>호야</h1>
+    <h1>동개's 홈페이지</h1>
     <h3>동개가 제작한 '호야'에 오신것을 환영합니다~!</h3>
     <p>피드백 항상 받고있어요, 주기적인 업데이트 중 &nbsp;(ver 4.8)</p>
   </div><br>
@@ -154,7 +126,7 @@ bottom:90px; right:20px;
        <a href="./별스타그램/star.html"><img src="./img/인스타.png" class="photo"></a>
     </div>
     <div class="f">
-        <a href="./나는누구/whomi.html"><div class="p"> 동개는 누구인가</div></a>
+        <a href="./나는누구/whomi.html"><div class="p"> 동개는 누구인가(수리중)</div></a>
         <a href="./생일/birth.html"><div class="p">🎉친구들, 생일축하해!</div></a>
         <a href="./별스타그램/star.html"><div class="p">동개's SNS</div></a>
     </div>
@@ -167,7 +139,7 @@ bottom:90px; right:20px;
    </div>
     <div class="f">
         <a href="./동개연락수단/연락수단.html"><div class="p"> 동개's 연락수단 </div></a>
-        <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="p">동개 제작 게임하러가기</div></a>
+        <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="p">동개 제작 게임하기</div></a>
         <a href="https://blog.naver.com/mulpure0424"><div class="p">동개의 블로그</div></a>
     </div>
 

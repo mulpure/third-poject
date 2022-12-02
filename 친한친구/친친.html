@@ -6,52 +6,30 @@
 <meta name="naver-site-verification" content="f11683a69ff2672d92516c2ebd1814452cfc442c" />
 <style>
   html{min-height: 100%;}
-  body{
-    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
-  }
-   body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-   }
-   a{
-    color: inherit;
-    text-decoration: none;
-   }
-   .menubox,ul{
-    background-color: antiquewhite;
-   }
-   .menubox>ul {
-    display: inline-block;
-   }
-   .menubox{
-    position: fixed;
-    width: 100%;
-    text-align: left;
-   }
-   .menubox>ul>li{ display: inline-block; }
+  body{background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%); text-align: center;}
 
-   .menubox ul>li>a{ 
-    display: block;
-    font-weight: bold;
-    padding: 20px;
-   }
-   .menubox>ul li:hover>a{
-    background-color: black;
-    color: white;
-   }
-   .menubox>ul ul{
-    position: absolute;
-    display: none;
-   }
-   .menubox ul>li:hover>ul{
-    display: block;
-   }
-  
-   .logo{
-    font-weight: bolder;
-    font-size: larger;
-   }  
+   body, ul, li { margin: 0; padding: 0; list-style: none; }
+
+   a{color: inherit; text-decoration: none;}
+   .menubox,ul{background-color: antiquewhite;}
+   .menubox>ul { display: inline-block;}
+   .menubox{ position: fixed;  width: 100%; text-align: left; z-index: 999; }
+   .menubox>ul>li{ display: inline-block; }
+   .menubox ul>li>a{  display: block; font-weight: bold; padding: 20px; }
+   .menubox>ul li:hover>a{ background-color: black; color: white; }
+   .menubox>ul ul{ position: absolute;  display: none; }
+   .menubox ul>li:hover>ul{ display: block;}  
+   .logo{font-weight: bolder; font-size: larger;   }  
+
+  .imgup{ position: relative; display: inline-block; }
+  .imgup img{ max-width: 100%;}
+  .imgup span.textup {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none; width: 100%; font-size: 70px; color: aliceblue; font-weight: 900; text-align: center;}
+  .imgup::before, .imgup::after{content: ''; position: absolute; top: 50%; left: 50%; width: 95%; height: 95%; transform: translate(-50%, -50%); transition: all .8s;}
+  .imgup::before{border-top: 4px solid #abecd6; border-bottom: 4px solid #abecd6; width: 0;}
+  .imgup::after{border-left: 4px solid #abecd6; border-right: 4px solid #abecd6; height: 0;}
+  .imgup:hover span.textup{display: block;}
+  .imgup:hover::before {width: 95%;}
+  .imgup:hover::after{height: 95%;}
 
 </style>
 
@@ -94,7 +72,16 @@
     </ul>
     </nav>
   </div>
- 
+
+  <br><br><br><br>
+  <a href="../index.html"><div class="imgup">
+    <img src="../img/busan.jpg">
+    <span class="textup">ㅇㅇㅇㅇㅇㅇㅇ</span>
+  </div></a>
+  <div class="imgup">
+    <img src="../img/s1.jpg.webp">
+    <span class="textup">test</span>
+  </div>
 
 
 
