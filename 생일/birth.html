@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>친구들아 생일축하해</title>
 <style>
-  body, ul, li { margin: 0; padding: 0; list-style: none; }
+  body, ul, li { margin: 0; padding: 0; list-style: none;}
    a{ color: inherit; text-decoration: none;}
    .menubox,ul{ background-color: antiquewhite; z-index: 999;}
    .menubox>ul { display: inline-block; background-image: linear-gradient(to left, #cc208e 0%, #6713d2 100%);}
@@ -17,33 +17,34 @@
    .logo{  font-weight: bolder;  font-size: larger; }  
 
      #fixed_layer1 {position:fixed;z-index:1000;height:70px; width:50px;bottom:30px; right:20px;}
-   #fixed_layer2 {position:fixed;z-index:1000;height:70px; width:50px;bottom:90px; right:20px;}
-   #fixed_welcome{  color: aliceblue;  position: fixed;  z-index: 1000;  height:70px; width:200px;  margin-top: 2px; right:5px;  font-weight: bolder;  font-size: larger;}
-
-   .maincon{ width: 100%; height: 100%; float: left; text-align: center;}
-
-   #kdh{width: 40%;display: inline-block; background-color: rgb(240, 206, 97); color: cornflowerblue; font-weight: bolder; font-size: 2rem;}
-   #pkm{margin-left: 5%; width: 40%; display: inline-block; background-color: rgb(217, 149, 251); color: blue; font-weight: bolder; font-size: 2rem;}
-
-   #per1{margin-top: 2%; width: 40%;display: inline-block; background-color: rgb(236, 255, 127); color: cornflowerblue; font-weight: bolder; font-size: 2rem;}
-   #per2{margin-top: 2%; margin-left: 5%; width: 40%; display: inline-block; background-color: rgb(89, 179, 201); color: blue; font-weight: bolder; font-size: 2rem;}
+    #fixed_layer2 {position:fixed;z-index:1000;height:70px; width:50px;bottom:90px; right:20px;}
+     #fixed_welcome{  color: aliceblue;  position: fixed;  z-index: 1000;  height:70px; width:200px;  margin-top: 2px; right:5px;  font-weight: bolder;  font-size: larger;}
 
 
-    body {margin: 0%; text-align: center; background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) }
-
-   html{min-height: 100%;}
-   h1 {margin-left: 3%; margin-top: 0%; display: inline; font-size: 2.4rem;}
+    body {margin: 0%;  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); margin-left: 0px; text-align: left;}
+   html{min-height: 100%; width: 100%;}
+   h1 { margin-top: 0%; display: inline; font-size: 2.4rem; margin-left: 35%;}
 
   .imgup{ position: relative; display: inline-block;}
   .imgup img{ max-width: 100%;}
-  .imgup span.textup {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none; width: 100%; font-size: 70px; color: rgb(27, 168, 8); font-weight: 900; text-align: center;}
+  .imgup span.textup {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none; width: 100%; font-size: 70px; color: rgb(17, 127, 195); font-weight: 900; text-align: center;}
   .imgup::before, .imgup::after{content: ''; position: absolute; top: 50%; left: 50%; width: 95%; height: 95%; transform: translate(-50%, -50%); transition: all .8s;}
-  .imgup::before{border-top: 7px solid #e7a305; border-bottom: 7px solid  #e7a305; width: 0;}
-  .imgup::after{border-left: 7px solid  #e7a305; border-right: 7px solid  #e7a305; height: 0;}
+  .imgup::before{border-top: 7px solid #e7055c; border-bottom: 7px solid  #e7055c; width: 0;}
+  .imgup::after{border-left: 7px solid  #e7055c; border-right: 7px solid  #e7055c; height: 0;}
   .imgup:hover span.textup{display: block;}
   .imgup:hover::before {width: 95%;}
   .imgup:hover::after{height: 95%;}
 
+  .bottom2{ margin-bottom: 100px; }
+
+    #frame2{ width: 710px;display: inline-block; margin-left: 100px; margin-top: 131px; background-color: #d69b11; margin-left: 9rem; text-align: center;}
+    .photo2{ width: 700px;display: inline-block; margin-left: 0px; border-style: solid; border-color: rgb(255, 174, 0); height: 450px;}
+    .text2{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; 
+     display: inline-block; margin-left: 0px; background-color: #d69b11;
+     color: rgb(28, 24, 4); height: 90px; line-height: 90px; margin-top: 13px;}
+     #text3{font-size: 50px; font-weight: bolder;}
+
+  
 
 </style>
 
@@ -90,10 +91,10 @@
     </div><br><br>
 
    <div id="fixed_layer1">
-    <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55" border="0" alt="로그인"></a></p>
+    <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55"  alt="로그인"></a></p>
       </div>
   <div id="fixed_layer2">
-    <p><a href="../index.html"><img src="../img/house.svg" width = "55" height="55" border="0" alt="로그인"></a></p>
+    <p><a href="../index.html"><img src="../img/house.svg" width = "55" height="55"  alt="로그인"></a></p>
       </div>
       <br><br>
 
@@ -108,23 +109,30 @@
    </iframe><br><br>
 
 
-   <br><br><br><br><br>
-   <a href="../생일/14.html"><div class="imgup" id="kdh">
-     <img src="../img/1월.jpg">
-     <span class="textup">1월~3월</span><p>1월~3월</p>
-   </div></a>
-   <a href="./46.html"><div class="imgup" id="pkm">
-    <img src="../img/5월.jpg">
-    <span class="textup">4월~6월</span><p>4월~6월</p>
+
+   <a href="../생일/14.html"><div class="imgup" id="frame2">
+    <img src="../img/1월.jpg" class="photo2">
+    <span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">1월~3월</span><p id="text3">1월~3월</p>
   </div></a>
-  <a href="./79.html"><div class="imgup" id="per1">
-    <img src="../img/8월.jpg">
-    <span class="textup">7월~9월</span><p>7월~9월</p>
+
+  <a href="./46.html"><div class="imgup" id="frame2">
+    <img src="../img/5월.jpg" class="photo2">
+    <span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">4월~6월</span><p id="text3">4월~6월</p>
   </div></a>
-  <a href="./10.html"><div class="imgup" id="per2">
-    <img src="../img/11월.jpg">
-    <span class="textup">10월~12월</span><p>10월~12월</p>
+
+  <a href="./79.html"><div class="imgup" id="frame2">
+    <img src="../img/8월.jpg" class="photo2">
+    <span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">7월~9월</span><p id="text3">7월~9월</p>
   </div></a>
+
+
+  <a href="../생일/10.html"><div class="imgup" id="frame2">
+    <img src="../img/11월.jpg" class="photo2">
+    <span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">10월~12월</span><p id="text3">10월~12월</p>
+  </div></a>
+
+  <div class="bottom2"></div>
+
 
 </body>
 </html>

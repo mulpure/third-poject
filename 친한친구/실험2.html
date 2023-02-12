@@ -10,18 +10,17 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="./동개점프샷.png">
 <meta property="og:description" content="방문을 환영합니다">
-
 <style>
+.f{width: 100%;}
+.s{width: 100%; margin-top: 5%;}
+.photo {width: 24%; display: inline-block; margin-left: 6%; border-style: solid; border-color: rgb(255, 174, 0);}
+.p{font-weight: bolder; text-align: center; width: 24%; display: inline-block; margin-left: 6%; background-color: rgb(17, 104, 107); color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 5ch; line-height: 5ch;}
 
-   .frame1{ width: 700px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
-   .photo1{ width: 700px;display: inline-block; margin-left: 80px; border-style: solid; border-color: rgb(255, 174, 0); height: 450px;}
-   .text1{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; 
-    display: inline-block; margin-left: 80px; background-color: rgb(17, 104, 107);
-     color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 90px; line-height: 90px; margin-top: 13px;}
-    
-     .bottom1{width: 100%; height: 300px;}
-
-
+.leftper{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; 
+  display: inline-block; margin-left: 80px; background-color: rgb(17, 104, 107);
+   color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 90px; line-height: 90px; margin-top: 20px;}
+.leftphoto{ width: 700px;display: inline-block; margin-left: 80px; border-style: solid; border-color: rgb(255, 174, 0); height: 450px;}
+.leftphoto1{ width: 700px;display: inline-block; margin-left: 80px; margin-top: 30px;  }
 
 body, ul, li { margin: 0; padding: 0; list-style: none; }
    a{ color: inherit; text-decoration: none;}
@@ -37,7 +36,7 @@ body, ul, li { margin: 0; padding: 0; list-style: none; }
 
 
 
-body {margin: 0%; background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%); color: rgb(38, 51, 90); }
+body {margin: 0%; background-image: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%); color: rgb(206, 22, 129); }
 html {min-height: 100%;}
 h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: black;}
 .title {margin: 0%; width: 100%; text-align: center;}
@@ -54,7 +53,6 @@ z-index:1000;
 height:70px; width:50px;
 bottom:90px; right:20px;
 }
-#fixed_layer3 {position:fixed; z-index:1000; height:70px; width:50px; bottom:300px; right:20px; font-size: xx-large; font-weight: bolder;}
 #fixed_welcome{
   color: black;
   position: fixed;
@@ -117,9 +115,9 @@ bottom:90px; right:20px;
 
   <div class="title">
     <h1>호야</h1>
-    <h1>동개's 의 호야</h1>
-    <h2>동개가 제작한 '호야'에 오신것을 환영합니다~!</h2>
-    <h3> (ver 6.0.0) - since 22.04.30</h3>
+    <h1>동개's 홈페이지</h1>
+    <h3>동개가 제작한 '호야'에 오신것을 환영합니다~!</h3>
+    <p>피드백 항상 받고있어요, 주기적인 업데이트 중 &nbsp;(ver 5.2)</p>
   </div><br>
 
   <div id="fixed_layer1">
@@ -128,59 +126,63 @@ bottom:90px; right:20px;
   <div id="fixed_layer2">
     <p><a href="./index.html"><img src="./img/house.svg" width = "55" height="55" border="0" alt="로그인"></a></p>
       </div>
-   <div id="fixed_layer3">
-        <p>&copy; 김동하</p>
-          </div>
   
 
-  
-    <a href="./나는누구/첫화면.html"> <div class="frame1">
-      <img src="./img/whoMislide1.jpg" class="photo1">
-      <a href="./나는누구/첫화면.html"><div class="text1">동개, 호야 소개</div></a>
-    </div></a>
+  <div>
+    <div class="f">
+       <a href="./나는누구/whomi.html"><img src="./img/whoMislide1.jpg"class="photo" alt="동개소개 바로가기"></a>
+       <a href="./생일/birth.html"> <img src="./img/생dlf.jpg" class="photo"></a>
+       <a href="./별스타그램/star.html"><img src="./img/인스타.png" class="photo"></a>
+    </div>
+    <div class="f">
+        <a href="./나는누구/whomi.html"><div class="p"> 동개는 누구인가(수리중)</div></a>
+        <a href="./생일/birth.html"><div class="p">🎉친구들, 생일축하해!</div></a>
+        <a href="./별스타그램/star.html"><div class="p">동개's SNS</div></a>
+    </div>
 
-    <a href="./생일/birth.html"><div class="frame1">
-      <img src="./img/생dlf.jpg" class="photo1">
-      <a href="./생일/birth.html"><div class="text1">친구들, 생일축하해🎉<br></div></a>
-    </div></a>
-    
-    <a href="./별스타그램/star.html"><div class="frame1">
-      <img src="./img/인스타.png" class="photo1">
-      <a href="./별스타그램/star.html"><div class="text1">동개's SNS</div></a>
-    </div></a>
 
-    <a href="./동개연락수단/연락수단.html"><div class="frame1">
-      <img src="./img/동개연락.jpg" class="photo1">
-      <a href="/동개연락수단/연락수단.html"><div class="text1">동개's 연락수단</div></a>
-    </div></a>
+    <div class="s">
+      <a href="./동개연락수단/연락수단.html"><img src="./img/동개연락.jpg" class="photo" alt="동개소개 바로가기"></a>
+      <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"> <img src="./img/골든볼.png" class="photo"></a>
+      <a href="https://blog.naver.com/mulpure0424"><img src="./img/동개블로그.png" class="photo"></a>
+   </div>
+    <div class="f">
+        <a href="./동개연락수단/연락수단.html"><div class="p"> 동개's 연락수단 </div></a>
+        <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="p">동개 제작 게임하기</div></a>
+        <a href="https://blog.naver.com/mulpure0424"><div class="p">동개의 블로그</div></a>
+    </div>
 
-    <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="frame1">
-      <img src="./img/골든볼.png" class="photo1">
-      <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="text1">동개 제작 게임하기</div></a>
-    </div></a>
+    <div class="s">
+      <a href="./업데이트노트/update.html"><img src="./img/업뎃.png" class="photo" alt="동개소개 바로가기"></a>
+      <a href=""> <img src="./img/수리중.jpg" class="photo"></a>
+      <a href="./친한친구/로그인.html"><img src="./img/친한친구.jpg" class="photo"></a>
+   </div>
+    <div class="f">
+        <a href="./업데이트노트/update.html"><div class="p"> 업데이트 내역</div></a>
+        <a href=""><div class="p">게시판 예정</div></a>
+        <a href="./친한친구/로그인.html"><div class="p">친한친구 로그인</div></a>
+    </div>
 
-    <a href="https://blog.naver.com/mulpure0424"><div class="frame1">
-      <img src="./img/동개블로그.png" class="photo1">
-      <a href="https://blog.naver.com/mulpure0424"><div class="text1">동개's 블로그</div></a>
-    </div></a>
 
-    <a href="./친한친구/로그인.html"><div class="frame1">
-      <img src="./img/친한친구.jpg" class="photo1">
-      <a href="./친한친구/로그인.html"><div class="text1">친한친구 로그인</div></a>
-    </div></a>
 
-    <a href="./업데이트노트/update.html"><div class="frame1">
-      <img src="./img/업뎃.png" class="photo1">
-      <a href="./업데이트노트/update.html"><div class="text1">업데이트 내역</div></a>
-    </div></a>
 
-    <div class="bottom1">&copy; 김동하</div>
 
-  </div>
+
+ 
+
+      <a href=""> <div class="leftphoto1">
+        <img src="../img/1월.jpg" class="leftphoto">
+        <a href=""><div class="leftper">업데이트d2</div></a>
+      </div></a>
+
+      <a href=""><div class="leftphoto1">
+        <img src="../img/1월.jpg" class="leftphoto">
+        <a href=""><div class="leftper">업데이트3</div></a>
+      </div></a>
+
+
+    <br>
+    <p>&nbsp;&nbsp;</p>
+    <br>
+   </div>
 </body>
-
-
-
-
-
-

@@ -7,7 +7,8 @@
 .f{width: 100%;}
 .s{width: 100%; margin-top: 5%;}
 .photo {width: 24%; display: inline-block; margin-left: 6%; border-style: solid; border-color: rgb(255, 187, 0);}
-.p{font-weight: bolder; text-align: center; width: 24%; display: inline-block; margin-left: 6%; background-color: rgb(33, 103, 124); color: rgb(255, 217, 0);border-style: solid; border-color: rgb(245, 179, 37);}
+.p{font-weight: bolder; text-align: center; width: 24%; display: inline-block; margin-left: 6%; background-color: rgb(33, 103, 124); 
+  color: rgb(255, 217, 0);border-style: solid; border-color: rgb(245, 179, 37);}
 
 body, ul, li { margin: 0; padding: 0; list-style: none; }
    a{ color: inherit; text-decoration: none;}
@@ -21,18 +22,17 @@ body, ul, li { margin: 0; padding: 0; list-style: none; }
    .menubox ul>li:hover>ul{  background-color: darkolivegreen;  display: block; }
    .logo{  font-weight: bolder;  font-size: larger; }  
 
-#fixed_layer1 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:30px; right:20px;
-}
-#fixed_layer2 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:90px; right:20px;
-}
+     .frame1{ width: 500px;display: inline-block; margin-left: 45px; margin-top: 131px;  text-align: center;}
+   .photo1{ width: 500px;display: inline-block; margin-left: 45px; border-style: solid; border-color: rgb(255, 174, 0); height: 350px;}
+   .text1{font-weight: bolder; font-size: 35px; text-align: center; width: 500px; 
+    display: inline-block; margin-left: 45px; background-color: rgb(137, 73, 112);
+     color: rgb(255, 166, 0);border-style: solid; border-color: rgb(87, 3, 138); height: 70px; line-height: 35px; margin-top: 13px;}
+  .sil{margin-top: 3px; font-size: 20px; font-weight: bolder; color: rgb(121, 189, 107);}
+    
+#fixed_layer1 {position:fixed;z-index:1000;height:70px; width:50px;bottom:30px; right:20px;}
+#fixed_layer2 {position:fixed; z-index:1000; height:70px; width:50px; bottom:90px; right:20px;}
+#fixed_layer3 {position:fixed; z-index:1000; height:70px; width:50px; bottom:300px; right:20px; font-size: xx-large; font-weight: bolder;}
+
 #fixed_welcome{
   position: fixed;
   z-index: 1000;
@@ -43,11 +43,13 @@ bottom:90px; right:20px;
 }
 
 html{min-height: 100%;}
-body {margin: 0%; background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
+body {margin: 0%; background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%); text-align: left;}
 h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center;}
 .title {margin: 0%; width: 100%; text-align: center;}
 
 .인{font-size: small; color: lightgreen;}
+
+.bottom1{width: 100%; height: 300px;}
 
 </style>
 </head>
@@ -92,49 +94,53 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center;}
     </div><br><br><br><br>
 
 
-   <div id="fixed_layer1">
-    <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55" border="0" alt="로그인"></a></p>
+      <div id="fixed_layer1">
+        <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55" border="0" alt="로그인"></a></p>
       </div>
-  <div id="fixed_layer2">
-    <p><a href="../index.html"><img src="../img/house.svg" width = "55" height="55" border="0" alt="로그인"></a></p>
+       <div id="fixed_layer2">
+       <p><a href="../index.html"><img src="../img/house.svg" width = "55" height="55" border="0" alt="로그인"></a></p>
       </div>
+      <div id="fixed_layer3">
+        <p>&copy; 김동하</p>
+          </div>
 
 
   <div class="title">
     <h1>동개의 SNS</h1>
-    <h3>상시 심심이인 고쓰리 김동개씨,</h3>
-    <p>(뚝딱 업데이트 진행 중)</p>
-  </div><br>
-
-  <div>
-    <div class="f">
-       <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="><img src="../img/인스타.png" class="photo" alt="동개인스타"></a>
-       <a href="https://www.facebook.com/profile.php?id=100024604201216"> <img src="../img/페이스북.png" class="photo" alt="동개카톡"></a>
-       <a href="https://minihompy.cyworld.com/anfud999.UP84"><img src="../img/싸이월드.png" class="photo" alt="싸이월드"></a>
-    </div>
-    <div class="f">
-        <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="><div class="p"> 동개의 인스타<br><span class="인">@mulpure0424</span></div></a>
-        <a href="https://www.facebook.com/profile.php?id=100024604201216"><div class="p">페이스북<br><span class="인">동하김</span></div></a>
-        <a href="https://minihompy.cyworld.com/anfud999.UP84"><div class="p">싸이월드<br><sspan class="인">동개의 미니홈피 구경하기</span></div></a>
-    </div>
+    <p>트렌드 반영 느린 김동개한테 언제든 조언해주세여</p>
+  </div>
 
 
-    <div class="s">
-        <a href="https://asked.kr/kimdongdog"> <img src="../img/애스크.png" class="photo" alt="애스크 ㄱ"></a>
-        <a href="https://advent-calendar-by-likelion.github.io/AdventCalendar/#/hotel/MRRSUIAyyFYBdT7AmGpn7LM6W6I2"><img src="../img/진저호텔.png" class="photo" alt="수리 중"></a>
-        <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"><img src="../img/트리꾸미기.png" class="photo"></a>
-   </div>
-    <div class="f">
-        <a href="https://asked.kr/kimdongdog"><div class="p">애스크<br><span class="인">많이 해줘요...ㅜ</span></div></a>
-        <a href="https://advent-calendar-by-likelion.github.io/AdventCalendar/#/hotel/MRRSUIAyyFYBdT7AmGpn7LM6W6I2"><div class="p"> 🎄진저호텔🎄  <br><span class="인">많이해주면 기뻐해요 :D</span></div></a>
-        <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"><div class="p">🎄트리🎄<br><span class="인">트리도 해주면 기뻐해요</span></div></a>
-    </div>
+    <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="> <div class="frame1">
+      <img src="../img/인스타.png" class="photo1">
+      <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="><div class="text1">인스타그램<br><span class="sil">@mulpure0424</span></div></a>
+    </div></a>
 
-    <br><p>&nbsp;&nbsp;</p>
+        <a href="https://www.facebook.com/profile.php?id=100024604201216"> <div class="frame1">
+      <img src="../img/페이스북.png" class="photo1">
+      <a href="https://www.facebook.com/profile.php?id=100024604201216"><div class="text1">페이스북<br><span class="sil">동하김</span></div></a>
+    </div></a>
 
+        <a href="https://asked.kr/kimdongdog"> <div class="frame1">
+      <img src="../img/애스크.png" class="photo1">
+      <a href="https://asked.kr/kimdongdog"><div class="text1">애스크<br><p class="sil">애스크 해주면 동개가 좋아해요😊</p></div></a>
+    </div></a>
 
+    <a href="https://minihompy.cyworld.com/anfud999.UP84"> <div class="frame1">
+      <img src="../img/싸이월드.png" class="photo1">
+      <a href="https://minihompy.cyworld.com/anfud999.UP84"><div class="text1">싸이월드<br><p class="sil">동개의 미니홈피 구경하기</p></div></a>
+    </div></a>
 
+    <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"> <div class="frame1">
+      <img src="../img/진저호텔.png" class="photo1">
+      <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"><div class="text1">🎄진저호텔🎄 <br><p class="sil">트리는 올해 크리스마스에 다시,,</p></div></a>
+    </div></a>
 
+    <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"> <div class="frame1">
+      <img src="../img/수리중.jpg" class="photo1">
+      <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"><div class="text1">본디<br><p class="sil">곧 업데이트 예정!!</p></div></a>
+    </div></a>
 
+    <div class="bottom1">&copy; 김동하</div>
 
 </div>

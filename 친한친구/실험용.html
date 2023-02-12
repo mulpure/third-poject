@@ -7,8 +7,8 @@
   body, ul, li { margin: 0; padding: 0; list-style: none; }
    a{ color: inherit; text-decoration: none;}
    .menubox,ul{ background-color: antiquewhite; z-index: 999;}
-   .menubox>ul { display: inline-block; background-image: linear-gradient(to left, #9be15d 0%, #00e3ae 100%);}
-   .menubox{ color: rgb(255, 255, 255); position: fixed;  width: 100%;  text-align: left; z-index: 999; background-image: linear-gradient(to right, #9be15d 100%, #00e3ae 0%);}
+   .menubox>ul { display: inline-block; background-image: linear-gradient(to right, #d9afd9 0%, #97d9e1 100%);}
+   .menubox{ color: rgb(255, 255, 255); position: fixed;  width: 100%;  text-align: left; z-index: 999;  background-image: linear-gradient(to left,#97d9e1 100%, #d9afd9 0%);}
    .menubox>ul>li{ display: inline-block; }
    .menubox ul>li>a{   display: block;  font-weight: bold;  padding: 20px; }
    .menubox>ul li:hover>a{ background-color: rgb(254, 175, 40); color: white; }
@@ -20,8 +20,16 @@
    #fixed_layer2 {position:fixed;z-index:1000;height:70px; width:50px;bottom:90px; right:20px;}
    #fixed_welcome{  color: aliceblue;  position: fixed;  z-index: 1000;  height:70px; width:200px;  margin-top: 2px; right:5px;  font-weight: bolder;  font-size: larger;}
 
+   .maincon{ width: 100%; height: 100%; float: left; text-align: center;}
 
-    body {margin: 0%; text-align: center; background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); }
+   #kdh{width: 40%;display: inline-block; background-color: rgb(240, 206, 97); color: cornflowerblue; font-weight: bolder; font-size: 2rem;}
+   #pkm{margin-left: 5%; width: 40%; display: inline-block; background-color: rgb(217, 149, 251); color: blue; font-weight: bolder; font-size: 2rem;}
+
+   #per1{margin-top: 2%; width: 40%;display: inline-block; background-color: rgb(236, 255, 127); color: cornflowerblue; font-weight: bolder; font-size: 2rem;}
+   #per2{margin-top: 2%; margin-left: 5%; width: 40%; display: inline-block; background-color: rgb(89, 179, 201); color: blue; font-weight: bolder; font-size: 2rem;}
+
+
+    body {margin: 0%; text-align: center;background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
 
    html{min-height: 100%;}
    h1 {margin-left: 3%; margin-top: 0%; display: inline; font-size: 2.4rem;}
@@ -36,17 +44,10 @@
   .imgup:hover::before {width: 95%;}
   .imgup:hover::after{height: 95%;}
 
-      .con{width: 100%; height: 100%; text-align: center;}
-     .leftper{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; display: inline-block; margin-left: 80px; 
-      background-color: rgb(17, 104, 107); color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); 
-      height: 90px; line-height: 90px; margin-top: 90px;}
-      .rightper{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; display: inline-block; margin-left: 80px; 
-      background-color: rgb(17, 104, 107); color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); 
-      height: 90px; line-height: 90px; margin-top: 90px;}
-
-      #bottom{ margin-bottom: 300px;}
-
-
+    .con{width: 100%; height: 100%; text-align: center;}
+    .leftper{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; display: inline-block; margin-left: 80px; 
+    background-color: rgb(17, 104, 107); color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); 
+    height: 90px; line-height: 90px; margin-top: 20px;}
 </style>
 
 <!---------------------------------------------------->
@@ -55,7 +56,7 @@
 
 <body>
   <div id="fixed_welcome">
-    <p>4,5,6월을 생일🎉</p>
+    <p>10,11,12월 생일🎉</p>
       </div>
   <div class="header">
     <nav class="menubox">
@@ -100,7 +101,7 @@
       <br><br>
 
  
-       <h1>4~6월생의 생일을 축하합니다🎉</h1><br><br>
+       <h1>10~12월생의 생일을 축하합니다🎉</h1><br><br>
    <iframe width="100%" height="400"
         src="https://www.youtube.com/embed/AWrXKyFzg0o?start=8?autoplay=1" 
         title="YouTube video player"
@@ -110,16 +111,42 @@
    </iframe><br><br>
 
 
-   <br><br><br><br>
+   <div class="maincon">
+    <div id="pkm"><a href="">🎉 1201 동욱</a></div>
+
+    <div id="per1"> <a href="">🎉 주인공 구함</a> </div>
+    <div id="per2"> <a href="">🎉 주인공 구함</a>  </div>
+    <div id="per2"> <a href="">🎉 주인공 구함</a>  </div>
+ 
+   </div>
+
+   <br><br><br><br><br><br><br><br><br>
+   <a href="../생일/14.html"><div class="imgup" >
+     <img src="../img/1월.jpg">
+     <span class="textup">1월~3월</span>
+   </div></a>
+   <a href="../index.html"><div class="imgup" >
+    <img src="../img/5월.jpg">
+    <span class="textup">4월~6월</span>
+  </div></a>
+  <a href="../index.html"><div class="imgup" >
+    <img src="../img/8월.jpg">
+    <span class="textup">7월~9월</span>
+  </div></a>
+  <a href="../index.html"><div class="imgup" >
+    <img src="../img/11월.jpg">
+    <span class="textup">10월~12월</span>
+  </div></a>
+  <br><br><br><br><br><br><br><br><br>
 
   <div class="con">
-    <a href=""><div class="leftper">🎉0424 김동하🎉</div></a>
-    <a href=""><div class="rightper">🎉0608 이윤지🎉</div></a>
-    <a href=""><div class="leftper">주인공 모집중</div></a>
-    <a href=""><div class="rightper">주인공 모집중</div></a>
+    <a href=""><div class="leftper">0424 김동하</div></a>
+    <a href=""><div class="leftper">0424 김동하</div></a>
+    <a href=""><div class="leftper">0424 김동하</div></a>
+    <a href=""><div class="leftper">0424 김동하</div></a>
+    <a href=""><div class="leftper">0424 김동하</div></a>
   </div>
 
-  <div id="bottom"></div>
 
 </body>
 </html>

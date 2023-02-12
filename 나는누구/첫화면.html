@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title> 나는 누구일까요? </title>
 <style>
+    html {min-height: 100%;}
 body, ul, li {
     margin: 0;
     padding: 0;
@@ -75,56 +76,16 @@ bottom:90px; right:20px;
 body {margin: 0%;  }
 h1 {margin: 0%; }
 
-.section input[id*=slide]{
-    display: none;
-}
-.section .slidewrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.section .slidelist {
-    white-space: nowrap;
-    font-size: 0;
-}
-.section .slidelist > li {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    transition: all .5s;
-}
-.section .slidelist > li > a {
-    display: block;
-    position: relative;
-}
-.section ,.slidelist > li > a img {
-    width: 100%;
-}
-.section .slidelist label {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 50px;
-    cursor: pointer;
-}
-.section .slidelist .left {
-    left: 30px;
-    background:url(../img/L.png) center center / 100% no-repeat;
-}
-.section .slidelist .right {
-    right: 30px;
-    background:url(../img/R.png) center center / 100% no-repeat;
-}
-.section [id="slide1"]:checked ~ .slidewrap .slidelist > li {transform: translate(0%);}
-.section [id="slide2"]:checked ~ .slidewrap .slidelist > li {transform: translate(-100%);}
-.section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translate(-200%);}
 
 h1 { text-align: center; font-size: 55px;}
 body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
-.intro{display: inline-block;}
-.name{display: inline-block;}
-.info{margin-left: 5%;margin-top: 8%;}
+
+.frame1{ width: 700px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
+   .photo1{ width: 700px;display: inline-block; margin-left: 80px; border-style: solid; border-color: rgb(255, 0, 162); height: 450px;}
+   .text1{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; 
+    display: inline-block; margin-left: 80px; background-color: rgb(17, 104, 107);
+     color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 90px; line-height: 90px; margin-top: 13px;}
+
 </style>
 
 <!------------------------------------------>
@@ -169,57 +130,18 @@ body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
         </nav>
         </div>
 <div>&nbsp</div><br><br><br>
-<h1>김동하 그는 누구인가</h1>&nbsp
-<h2>아직 업뎃 중</h2>
+<h1>HOYA</h1>&nbsp
 
-<div id="fixed_layer1">
-    <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55" border="0" alt="로그인"></a></p>
-      </div>
-  <div id="fixed_layer2">
-    <p><a href="../index.html"><img src="../img/house.svg" width = "55" height="55" border="0" alt="로그인"></a></p>
-      </div>
+<a href="../나는누구/호야서버.html"> <div class="frame1">
+    <img src="../img/생일홈.png" class="photo1">
+    <a href="./호야서버.html"><div class="text1">호야서버, 무엇인가</div></a>
+  </div></a>
 
+  <a href="./whomi.html"> <div class="frame1">
+    <img src="../img/whoMislide1.jpg" class="photo1">
+    <a href="./whomi.html"><div class="text1">김동하, 그는 누구인가</div></a>
+  </div></a>
 
-<div class="section">
-    <input type="radio" name="slide" id="slide1" checked>
-    <input type="radio" name="slide" id="slide2">
-    <input type="radio" name="slide" id="slide3">
-
-    <div class="slidewrap">
-        <ul class="slidelist">
-            <li>
-                <a>
-                    <label for="slide3" class="left"></label>
-                    <img src="../img/busan.jpg">
-                    <label for="slide2" class="right"></label>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <label for="slide1" class="left"></label>
-                    <img src="../img/s2.jpg.webp">
-                    <label for="slide3" class="right"></label>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <label for="slide2" class="left"></label>
-                    <img src="../img/s3.jpg">
-                    <label for="slide1" class="right"></label>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-<table class="info">
-    <tr>
-      <td><img alt="김동개" src="../img/busan.jpg" /></td><td>이름 김동하</td>
-    <tr>
-  </table>
-
- <a href="첫화면.html"><img src="../img/11월.jpg"></a>
 
 
 </body>
