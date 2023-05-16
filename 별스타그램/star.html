@@ -22,13 +22,23 @@ body, ul, li { margin: 0; padding: 0; list-style: none; }
    .menubox ul>li:hover>ul{  background-color: darkolivegreen;  display: block; }
    .logo{  font-weight: bolder;  font-size: larger; }  
 
-     .frame1{ width: 500px;display: inline-block; margin-left: 45px; margin-top: 131px;  text-align: center;}
-   .photo1{ width: 500px;display: inline-block; margin-left: 45px; border-style: solid; border-color: rgb(255, 174, 0); height: 350px;}
-   .text1{font-weight: bolder; font-size: 35px; text-align: center; width: 500px; 
-    display: inline-block; margin-left: 45px; background-color: rgb(137, 73, 112);
+  .frame1{ width: 550px;display: inline-block; margin-left: 60px; margin-top: 131px;  text-align: center;}
+  .photo1{ width: 550px;display: inline-block; margin-left: 60px; border-style: solid; border-color: rgb(255, 174, 0); height: 400px;}
+  .text1{font-weight: bolder; font-size: 35px; text-align: center; width: 550px; 
+    display: inline-block; margin-left: 60px; background-color: rgb(137, 73, 112);
      color: rgb(255, 166, 0);border-style: solid; border-color: rgb(87, 3, 138); height: 70px; line-height: 35px; margin-top: 13px;}
   .sil{margin-top: 3px; font-size: 20px; font-weight: bolder; color: rgb(121, 189, 107);}
     
+  .imgup{ position: relative; display: inline-block; }
+  .imgup img{ max-width: 100%;}
+  .imgup span.textup {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none; width: 100%; font-size: 70px; color: rgb(40, 179, 254); font-weight: 900; text-align: center;margin-left: 70px;}
+  .imgup::before, .imgup::after{content: ''; position: absolute; top: 50%; left: 50%; width: 95%; height: 95%; transform: translate(-50%, -50%); transition: all .8s; margin-left: 65px;}
+  .imgup::before{border-top: 7px solid #05e79c; border-bottom: 7px solid  #05e79c; width: 0;}
+  .imgup::after{border-left: 7px solid  #05e79c; border-right: 7px solid  #05e79c; height: 0;}
+  .imgup:hover span.textup{display: block;}
+  .imgup:hover::before {width: 95%;}
+  .imgup:hover::after{height: 95%;}
+
 #fixed_layer1 {position:fixed;z-index:1000;height:70px; width:50px;bottom:30px; right:20px;}
 #fixed_layer2 {position:fixed; z-index:1000; height:70px; width:50px; bottom:90px; right:20px;}
 #fixed_layer3 {position:fixed; z-index:1000; height:70px; width:50px; bottom:300px; right:20px; font-size: xx-large; font-weight: bolder;}
@@ -111,34 +121,44 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center;}
   </div>
 
 
-    <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="> <div class="frame1">
-      <img src="../img/인스타.png" class="photo1">
+    <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="> <div class="frame1"><div class="imgup">
+      <img src="../img/인스타.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">인스타 @mulpure0424</span></div>
       <a href="https://instagram.com/mulpure0424?igshid=YmMyMTA2M2Y="><div class="text1">인스타그램<br><span class="sil">@mulpure0424</span></div></a>
     </div></a>
 
-        <a href="https://www.facebook.com/profile.php?id=100024604201216"> <div class="frame1">
-      <img src="../img/페이스북.png" class="photo1">
-      <a href="https://www.facebook.com/profile.php?id=100024604201216"><div class="text1">페이스북<br><span class="sil">동하김</span></div></a>
+    <a href="https://www.instagram.com/dongdog0424/"> <div class="frame1"><div class="imgup">
+      <img src="../img/인스타dongdog0424.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">인스타 @dongdog0424</span></div>
+      <a href="https://www.instagram.com/dongdog0424/"><div class="text1">인스타그램<br><span class="sil">@dongdog0424</span></div></a>
     </div></a>
 
-        <a href="https://asked.kr/kimdongdog"> <div class="frame1">
-      <img src="../img/애스크.png" class="photo1">
+    <a href="https://asked.kr/kimdongdog"> <div class="frame1"><div class="imgup">
+      <img src="../img/애스크.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">애스크</span></div>
       <a href="https://asked.kr/kimdongdog"><div class="text1">애스크<br><p class="sil">애스크 해주면 동개가 좋아해요😊</p></div></a>
     </div></a>
 
-    <a href="https://minihompy.cyworld.com/anfud999.UP84"> <div class="frame1">
-      <img src="../img/싸이월드.png" class="photo1">
+    <a href="https://blog.naver.com/mulpure0424"> <div class="frame1"><div class="imgup">
+      <img src="../img/동개블로그.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">블로그</span></div>
+      <a href="https://blog.naver.com/mulpure0424"><div class="text1">블로그<br><span class="sil">앞으론 자주 해볼..?</span></div></a>
+    </div></a>
+
+    <a href="https://www.facebook.com/profile.php?id=100024604201216"> <div class="frame1"><div class="imgup">
+      <img src="../img/페이스북.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">페이스북</span></div>
+      <a href="https://www.facebook.com/profile.php?id=100024604201216"><div class="text1">페이스북<br><span class="sil">동하김</span></div></a>
+    </div></a>
+
+    <a href="https://minihompy.cyworld.com/anfud999.UP84"> <div class="frame1"><div class="imgup">
+      <img src="../img/싸이월드.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">싸이월드</span></div>
       <a href="https://minihompy.cyworld.com/anfud999.UP84"><div class="text1">싸이월드<br><p class="sil">동개의 미니홈피 구경하기</p></div></a>
     </div></a>
 
-    <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"> <div class="frame1">
-      <img src="../img/진저호텔.png" class="photo1">
-      <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"><div class="text1">🎄진저호텔🎄 <br><p class="sil">트리는 올해 크리스마스에 다시,,</p></div></a>
+    <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"> <div class="frame1"><div class="imgup">
+      <img src="../img/본디.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">본디</span></div>
+      <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"><div class="text1">본디<br><p class="sil">dongdog0424</p></div></a>
     </div></a>
 
-    <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"> <div class="frame1">
-      <img src="../img/본디.png" class="photo1">
-      <a href="https://play.google.com/store/apps/details?id=com.metadream.bondee"><div class="text1">본디<br><p class="sil">dongdog0424</p></div></a>
+    <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"> <div class="frame1"><div class="imgup">
+      <img src="../img/수리중.jpg" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">진저호텔</span></div>
+      <a href="https://colormytree.me/2022/01GMK8Q7RT4VWS7C79XAJNDKET"><div class="text1">🎄진저호텔🎄 <br><p class="sil">트리는 올해 크리스마스에 다시,,</p></div></a>
     </div></a>
 
     <div class="bottom1">&copy; 김동하</div>

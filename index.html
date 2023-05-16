@@ -13,13 +13,25 @@
 
 <style>
 
-   .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
-   .photo1{ width: 550px;display: inline-block; margin-left: 80px; border-style: solid; border-color: rgb(255, 174, 0); height: 400px;}
-   .text1{width: 550px; font-weight: bolder; font-size: 50px; text-align: center;  
-    display: inline-block; margin-left: 80px; background-color: rgb(17, 104, 107);
-     color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 90px; line-height: 90px; margin-top: 13px;}
-    
-     .bottom1{width: 100%; height: 300px;}
+    .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
+    .photo1{ width: 550px;display: inline-block; margin-left: 80px; border-style: solid; border-color: rgb(255, 174, 0); height: 400px;}
+    .text1{width: 550px; font-weight: bolder; font-size: 50px; text-align: center;  
+      display: inline-block; margin-left: 80px; background-color: rgb(17, 104, 107);
+      color: rgb(255, 208, 0);border-style: solid; border-color: rgb(89, 0, 255); height: 90px; line-height: 90px; margin-top: 13px;}
+      
+    .bottom1{width: 100%; height: 300px;}
+
+  .imgup{ position: relative; display: inline-block; }
+  .imgup img{ max-width: 100%;}
+  .imgup span.textup {position: absolute; top: 50%; left: 0; transform: translateY(-50%); display: none; width: 100%; font-size: 70px; color: rgb(254, 175, 40); font-weight: 900; text-align: center;margin-left: 80px;}
+  .imgup::before, .imgup::after{content: ''; position: absolute; top: 50%; left: 50%; width: 95%; height: 95%; transform: translate(-50%, -50%); transition: all .8s; margin-left: 80px;}
+  .imgup::before{border-top: 7px solid #e7055c; border-bottom: 7px solid  #e7055c; width: 0;}
+  .imgup::after{border-left: 7px solid  #e7055c; border-right: 7px solid  #e7055c; height: 0;}
+  .imgup:hover span.textup{display: block;}
+  .imgup:hover::before {width: 95%;}
+  .imgup:hover::after{height: 95%;}
+
+  
 
 
 
@@ -101,7 +113,8 @@ bottom:90px; right:20px;
          <li><a href="./생일/79.html">🎉7월~9월</a></li>
          <li><a href="./생일/10.html">🎉10월~12월</a></li>
        </ul></li>
-      <li>
+       <li><a href="https://asked.kr/kimdongdog">애스크</a></li>
+       <li>
         <a href="#">기타</a>
         <ul>
           <li><a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15">골든 볼 트립(게임)</a></li>
@@ -118,7 +131,8 @@ bottom:90px; right:20px;
     <h1>호야</h1>
     <h1>동개's 의 호야</h1>
     <h2>동개가 제작한 '호야'에 오신것을 환영합니다~!</h2>
-    <h3> (ver 6.1.4) - since 22.04.30</h3>
+    <h3> (ver 6.2.3) - since 22.04.30</h3>
+    <h3>동개,호야 소개 | 생일 홈 | '동개's SNS | 애스크 | 골든 볼 트립 | 동개's 연락수단 |동개's 블로그 | 친한친구 | 업데이트 내역</h3>
   </div><br>
 
   <div id="fixed_layer1">
@@ -133,46 +147,49 @@ bottom:90px; right:20px;
   
 
   
-    <a href="./나는누구/첫화면.html"> <div class="frame1">
-      <img src="./img/수리중.jpg" class="photo1">
+    <a href="./나는누구/첫화면.html"> <div class="frame1"><div class="imgup">
+      <img src="./img/인천에서팔벌림.jpg" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">동개,호야 소개</span></div>
       <a href="./나는누구/첫화면.html"><div class="text1">동개, 호야 소개</div></a>
     </div></a>
 
-    <a href="./생일/birth.html"><div class="frame1">
-      <img src="./img/생dlf.jpg" class="photo1">
+    <a href="./생일/birth.html"><div class="frame1"><div class="imgup">
+      <img src="./img/생일_진숙.jpg" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">생일 홈</span></div>
       <a href="./생일/birth.html"><div class="text1">친구들, 생일축하해🎉<br></div></a>
     </div></a>
     
-    <a href="./별스타그램/star.html"><div class="frame1">
-      <img src="./img/인스타.png" class="photo1">
+    <a href="./별스타그램/star.html"><div class="frame1"><div class="imgup">
+      <img src="./img/인스타_5월.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">동개의 SNS</span></div>
       <a href="./별스타그램/star.html"><div class="text1">동개's SNS</div></a>
     </div></a>
 
-    <a href="./동개연락수단/연락수단.html"><div class="frame1">
-      <img src="./img/동개연락.jpg" class="photo1">
-      <a href="/동개연락수단/연락수단.html"><div class="text1">동개's 연락수단</div></a>
+
+    <a href="https://asked.kr/kimdongdog"><div class="frame1"><div class="imgup">
+      <img src="./img/애스크.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">동개's 애스크</span></div>
+      <a href="https://asked.kr/kimdongdog"><div class="text1">애스크(많이 해줘요..)</div></a>
     </div></a>
 
-    <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="frame1">
-      <img src="./img/골든볼.png" class="photo1">
+    <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="frame1"><div class="imgup">
+      <img src="./img/골든볼.png" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">동개 제작 게임</span></div>
       <a href="https://simmer.io/@mulpure/~3e371627-e0e4-9149-ffc4-d3446b0a6e15"><div class="text1">동개 제작 게임하기</div></a>
     </div></a>
 
-    <a href="https://blog.naver.com/mulpure0424"><div class="frame1">
-      <img src="./img/동개블로그.png" class="photo1">
-      <a href="https://blog.naver.com/mulpure0424"><div class="text1">동개's 블로그</div></a>
+
+    <a href="./동개연락수단/연락수단.html"><div class="frame1"><div class="imgup">
+      <img src="./img/동개연락.jpg" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">동개와 연락수단</span></div>
+      <a href="/동개연락수단/연락수단.html"><div class="text1">동개's 연락수단</div></a>
     </div></a>
 
-    <a href="./친한친구/로그인.html"><div class="frame1">
-      <img src="./img/친한친구.jpg" class="photo1">
+    <a href="./친한친구/로그인.html"><div class="frame1"><div class="imgup">
+      <img src="./img/친한친구.jpg" class="photo1"><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">친한친구 로그인</span></div>
       <a href="./친한친구/로그인.html"><div class="text1">친한친구 로그인</div></a>
     </div></a>
 
-    <a href="./업데이트노트/update.html"><div class="frame1">
-      <img src="./img/업뎃.png" class="photo1">
+    <a href="./업데이트노트/update.html"><div class="frame1"><div class="imgup">
+      <img src="./img/업뎃.png" class="photo1" ><span class="textup" style="text-shadow: -3px 0 rgb(0, 3, 3), 0 3px rgb(0, 0, 0), 3px 0 rgb(0, 0, 0), 0 -3px rgb(0, 6, 5)">업데이트 내역</span></div>
       <a href="./업데이트노트/update.html"><div class="text1">업데이트 내역</div></a>
     </div></a>
 
+    <h1></h1>
     <div class="bottom1">&copy; 김동하</div>
 
   </div>
