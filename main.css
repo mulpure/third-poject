@@ -1,4 +1,7 @@
 
+@media only screen and (max-width: 600px) {
+  /* 모바일 화면에 대한 스타일 */
+}
 
 
   .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
