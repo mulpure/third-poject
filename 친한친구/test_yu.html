@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사진 슬라이드쇼</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto; /* 이미지가 세로로 늘어진 경우를 대비하여 height: auto; 추가 */
+      object-fit: cover;
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+    }
+
+    .text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slideshow-container">
+  <div class="mySlides fade">
+    <img src="../img/11월.jpg" alt="이미지1">
+    <div class="text-container">
+      <div class="text">첫 번째 사진</div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/5월.jpg" alt="이미지2">
+    <div class="text-container">
+      <div class="text">두 번째 사진</div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../img/8월.jpg alt="이미지3">
+    <div class="text-container">
+      <div class="text">세 번째 사진</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // 2초마다 이미지 전환
+  }
+</script>
+
+</body>
+</html>
