@@ -52,7 +52,7 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
       max-width: 100%;
       margin-top: 0%;
       margin: 0;
-      height: 30%;
+      height: 40%;
       background-color:  #cba687;
       
   }
@@ -64,7 +64,7 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
 
   img {
       width: 70%;
-      height: 70%;
+      height: 750px;
       object-fit: cover;
       margin-top: 60px;
       margin-left: 30%;
@@ -72,7 +72,7 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
   .text-container {
     position: absolute;
     top: 70%;
-    left: 22%;
+    left: 28%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
