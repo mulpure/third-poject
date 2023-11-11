@@ -1,193 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>사진 슬라이드쇼</title>
+  <title>자동으로 열리는 팝업 창</title>
   <style>
+    /* 스타일링은 선택사항입니다. 필요에 따라 수정하세요. */
     body {
-      margin: 0;
-      overflow: hidden;
+      font-family: Arial, sans-serif;
     }
-
-    #slideshow-container {
-      position: relative;
-      max-width: 100%;
-      margin: auto;
-      overflow: hidden;
-    }
-
-    .mySlides {
+    #myModal {
       display: none;
-      animation: slide 1.5s ease-in-out; /* 슬라이딩 애니메이션 추가 */
-    }
-
-    img {
-      width: 80%;
-      height: 50%;
-      object-fit: cover;
-    }
-
-    .text {
-      position: absolute;
+      position: fixed;
       top: 50%;
-      left: 20%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
-      font-size: 64px;
-      font-weight: bold;
-      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
     }
-
-    @keyframes slide {
-      from {
-        left: 100%;
-        opacity: 0.4;
-      }
-
-      to {
-        left: 0;
-        opacity: 1;
-      }
+    #myModal p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
-<div id="slideshow-container">
-  <div class="mySlides fade">
-    <img src="../img/dongdog_game1.jpg" alt="이미지1">
-    <div class="text">동개가 제작한 게임</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="../img/5월.jpg" alt="이미지2">
-    <div class="text">두 번째 사진</div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="../img/골든볼.png" alt="이미지3">
-    <div class="text">세 번째 사진</div>
-  </div>
+<!-- 페이지 로드 시 자동으로 열리는 팝업 창 -->
+<div id="myModal">
+  <p>이것은 자동으로 열리는 팝업 창입니다.</p>
+  <button onclick="closeModal()">닫기</button>
 </div>
 
 <script>
-  var slideIndex = 0;
-  showSlides();
+  // 페이지 로드 시 자동으로 팝업을 열고 일정 시간 후에 닫습니다.
+  document.addEventListener('DOMContentLoaded', function() {
+    openModal(); // 팝업 열기
+    setTimeout(closeModal, 5000); // 5초 후에 팝업 닫기 (닫기 시간은 필요에 따라 조절 가능)
+  });
 
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000); // 2초마다 이미지 전환
+  // JavaScript로 팝업을 열고 닫는 함수를 정의합니다.
+  function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
   }
 </script>
 
 </body>
 </html>
-
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .slideshow-container {
-            max-width: 600px;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-        }
-    
-        .mySlides {
-            display: none;
-            animation: slideRight 4s linear infinite paused; /* initially paused */
-        }
-    
-        @keyframes slideRight {
-            0% {
-                transform: translateX(100%);
-            }
-            25% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(-100%);
-            }
-            75% {
-                transform: translateX(-200%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    
-        img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-
-</head>
-<body>
-
-<div class="slideshow-container">
-    <div class="mySlides">
-        <img src="../img/11월.jpg" alt="Image 1">
-    </div>
-
-    <div class="mySlides">
-        <img src="../img/5월.jpg" alt="Image 2">
-    </div>
-
-    <div class="mySlides">
-        <img src="../img/8월.jpg" alt="Image 3">
-    </div>
-</div>
-
-<script>
-    let slideIndex = 0;
-    let isPaused = true; // 초기에 멈춤 상태
-
-    function showSlides() {
-        const slides = document.getElementsByClassName("mySlides");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            slides[i].style.animationPlayState = "paused"; // 애니메이션 일시정지
-        }
-
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-        slides[slideIndex - 1].style.animationPlayState = "running"; // 애니메이션 재생
-
-        setTimeout(showSlides, 4000); // 이미지 전환 시간 (4초)
-    }
-
-    // 슬라이드 클릭 등의 이벤트가 발생하면 애니메이션을 일시정지/재생
-    document.addEventListener("click", function () {
-        isPaused = !isPaused;
-        const slides = document.getElementsByClassName("mySlides");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.animationPlayState = isPaused ? "paused" : "running";
-        }
-    });
-
-    // 초기에 슬라이드 시작
-    showSlides();
-</script>
-
-
-</body>
-</html>
--->
