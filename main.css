@@ -1,7 +1,4 @@
 
-@media only screen and (max-width: 600px) {
-  /* 모바일 화면에 대한 스타일 */
-}
 
 
   .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
@@ -46,7 +43,68 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
   margin-top: 200px;height: 200px; margin-bottom: 0px;width: 100%; background-color: rgb(145, 145, 145);
 }
 
-   
+  #fixed_layer1 {
+    position:fixed;
+    z-index:1000;
+    height:70px; width:50px;
+    bottom:30px; right:20px;
+    }
+    #fixed_layer2 {
+    position:fixed;
+    z-index:1000;
+    height:70px; width:50px;
+    bottom:90px; right:20px;
+    }
+    #fixed_layer3 {position:fixed; z-index:1000; height:70px; width:90px; bottom:200px; right:10px; font-size: large; font-weight: bolder;}
+    #fixed_layer4 {
+      position:fixed;
+    z-index:1000;
+    height:130px; width:90px;
+    bottom:90px; right:20px;
+    }
+    
+    #fixed_welcome{
+      color: rgb(255, 255, 255);
+      position: fixed;
+      z-index: 1000;
+      height:70px; width:200px;
+      margin-top: 2px; right:5px;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    #fixed_logo{
+    
+      position: fixed;
+      z-index: 1001;
+      height:100px; width:100px;
+      margin-top: 0px; left:0;
+      font-weight: bolder;
+      font-size: larger;
+    
+    }
+        /* 공통 스타일 */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* PC 화면에서의 스타일 */
+@media screen and (min-width: 600px) {
+  .text_big {
+    color: white;
+    font-display: auto;
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 20%;
+    text-shadow: -2px -2px 2px #3F5951, 2px -2px 2px #3F5951, -2px 2px 2px #3F5951, 2px 2px 2px #3F5951;
+  }
+  .text_small {
+    color: white;
+    font-display: auto;
+    font-weight: bold;
+    font-size:42px;
+    margin-left: 5%;
+    text-shadow: -1px -1px 1px #3F5951, 1px -1px 1px #3F5951, -1px 1px 1px #3F5951, 1px 1px 1px #3F5951;
+  }
   .slideshow-container {
     position: relative;
       max-width: 100%;
@@ -56,83 +114,95 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
       background-color:  #cba687;
       
   }
+   .slideshow-container img {
+    width: 70%;
+    height: 750px;
+    object-fit: cover;
+    margin-top: 60px;
+    margin-left: 30%;
+}
 
-  .mySlides {
-      display: none;
-      animation: slide 1.5s ease-in-out; 
-  }
 
-  img {
-      width: 70%;
-      height: 750px;
-      object-fit: cover;
-      margin-top: 60px;
-      margin-left: 30%;
-  }
-  .text-container {
-    position: absolute;
-    top: 70%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-  }
+.mySlides {
+    display: none;
+    animation: slide 1.5s ease-in-out; 
+}
 
-  .text {
+
+.text-container {
+  position: absolute;
+  top: 70%;
+  margin-left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+}
+
+/* 모바일 화면에서의 스타일 */
+@media screen and (max-width: 599px) {
+  .text_big {
     color: white;
-    font-size: 60px;
+    font-display: auto;
     font-weight: bold;
+    font-size: 55px;
+    margin-left: 20%;
+    text-shadow: -2px -2px 2px #3F5951, 2px -2px 2px #3F5951, -1px 1px 1px #3F5951, 1px 1px 1px #3F5951;
   }
-    @keyframes slide {
-        from {
-          left: 100%;
-          opacity: 0.4;
-        }
-  
-        to {
-          left: 0;
-          opacity: 1;
-        }
+  .text_small {
+    color: white;
+    font-display: auto;
+    font-weight: bold;
+    font-size:35px;
+    margin-left: 5%;
+    text-shadow: -1px -1px 1px #3F5951, 1px -1px 1px #3F5951, -1px 1px 1px #3F5951, 1px 1px 1px #3F5951;
+  }
+  .slideshow-container {
+    position: relative;
+      min-width: 100%;
+      margin-top: 0%;
+      margin: 0;
+      height: 400px;
+      background-color:  #cba687;
+      
+  }
+  .slideshow-container img {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 60px;
+   
+}
+
+
+.mySlides {
+    display: none;
+    animation: slide 1.5s ease-in-out; 
+}
+
+
+.text-container {
+  position: absolute;
+  top: 93%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+}
+
+  @keyframes slide {
+      from {
+        left: 100%;
+        opacity: 0.4;
       }
-      body {
-        margin: 0;
+
+      to {
+        left: 0;
+        opacity: 1;
       }
-      #fixed_layer1 {
-        position:fixed;
-        z-index:1000;
-        height:70px; width:50px;
-        bottom:30px; right:20px;
-        }
-        #fixed_layer2 {
-        position:fixed;
-        z-index:1000;
-        height:70px; width:50px;
-        bottom:90px; right:20px;
-        }
-        #fixed_layer3 {position:fixed; z-index:1000; height:70px; width:90px; bottom:200px; right:10px; font-size: large; font-weight: bolder;}
-        #fixed_layer4 {
-          position:fixed;
-        z-index:1000;
-        height:130px; width:90px;
-        bottom:90px; right:20px;
-        }
-        
-        #fixed_welcome{
-          color: rgb(255, 255, 255);
-          position: fixed;
-          z-index: 1000;
-          height:70px; width:200px;
-          margin-top: 2px; right:5px;
-          font-weight: bolder;
-          font-size: larger;
-        }
-        #fixed_logo{
-        
-          position: fixed;
-          z-index: 1001;
-          height:100px; width:100px;
-          margin-top: 0px; left:0;
-          font-weight: bolder;
-          font-size: larger;
-        
-        }
+    }
+    body {
+      margin: 0;
+    }
