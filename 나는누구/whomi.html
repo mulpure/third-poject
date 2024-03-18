@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title> 나는 누구일까요? </title>
 <style>
+    body {background-color: #FBEDC9;}
 body, ul, li {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body, ul, li {
     text-decoration: none;
    }
    .menubox,ul{
-    background-color: antiquewhite;
+    background-color: #D2E9E1;
    }
    .menubox>ul {
     display: inline-block;
@@ -121,10 +122,23 @@ h1 {margin: 0%; }
 .section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translate(-200%);}
 
 h1 { text-align: center; font-size: 55px;}
-body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
+
 .intro{display: inline-block;}
 .name{display: inline-block;}
 .info{margin-left: 5%;margin-top: 8%;}
+
+
+
+  /* 모바일 화면에서는 세로로 배치 */
+  @media (max-width: 768px) {
+    .container_GP {
+      flex-direction: column;
+    }
+    .image_GP, .text_GP {
+      width: 100%;
+      max-width: none;
+    }
+  }
 </style>
 
 <!------------------------------------------>
@@ -170,7 +184,7 @@ body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
         </div>
 <div>&nbsp</div><br><br><br>
 <h1>김동하 그는 누구인가</h1>&nbsp
-<h2>아직 업뎃 중</h2>
+<h2> BETA ver</h2>
 
 <div id="fixed_layer1">
     <p><a href="../친한친구/로그인.html"><img src="../img/친친.svg" width="55" height="55" border="0" alt="로그인"></a></p>
@@ -190,7 +204,7 @@ body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
             <li>
                 <a>
                     <label for="slide3" class="left"></label>
-                    <img src="../img/busan.jpg">
+                    <img src="../img/메인배경2.jpg">
                     <label for="slide2" class="right"></label>
                 </a>
             </li>
@@ -213,13 +227,15 @@ body {background-image: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);}
 </div>
 
 
-<table class="info">
-    <tr>
-      <td><img alt="김동개" src="../img/busan.jpg" /></td><td>이름 김동하</td>
-    <tr>
-  </table>
+<div class="container_GP">
+    <div class="image_GP">
+      <img src="../img/나.jpg" alt="Your Image">
+    </div>
+    <div class="text_GP">
+      <p>내 텍스트 어디로 사라짐..?</p>
+    </div>
+  </div>
 
- <a href="첫화면.html"><img src="../img/11월.jpg"></a>
 
 
 </body>

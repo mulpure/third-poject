@@ -1,5 +1,5 @@
 
-  .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-right: 80px;margin-top: 131px; max-width: 90%;}
+  .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-right: 10px;margin-top: 131px; }
   .photo1{ width: 550px;display: inline-block; margin-left: 80px; border-style: solid; border-color: #3F5951; height: 400px;}
   .text1{width: 550px; font-weight: bolder; font-size: 50px; text-align: center;  
     display: inline-block; margin-left: 80px; background-color:  #A6A18D;
@@ -35,6 +35,7 @@ body, ul, li { margin: 0; padding: 0; list-style: none; }
 body {margin: 0;background-color:  #D9BAA1; color: rgb(38, 51, 90); }
 html {min-height: 100%;}
 h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: black;}
+h2,h3 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: black;}
 .title {margin: 0%; width: 100%; text-align: center;}
 
 .bottom{
@@ -222,12 +223,16 @@ body {
 }
 }
 
+
+
+
+
 /* 모바일 화면에서의 스타일 */
 @media screen and (max-width: 599px) {
-  .frame1{ width: 550px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
-  .photo1{ width: 550px;display: inline-block; margin-left: 80px; border-style: solid; border-color: #3F5951; height: 400px;}
-  .text1{width: 550px; font-weight: bolder; font-size: 50px; text-align: center;  
-    display: inline-block; margin-left: 80px; background-color:  #A6A18D;
+  .frame1{ width: 90%;display: inline-block;  margin-top: 131px; margin-left: 3px; }
+  .photo1{ width: 90%;display: inline-block;  border-style: solid; border-color: #3F5951; height: 400px;}
+  .text1{width: 90%; font-weight: bolder; font-size: 50px; text-align: center;  
+    display: inline-block;  background-color:  #A6A18D;
     color: #efefef;border-style: solid; border-color: #3F5951; height: 90px; line-height: 90px; margin-top: 13px;}
       
 
@@ -246,20 +251,23 @@ body {
 
 body, ul, li { margin: 0; padding: 0; list-style: none; }
    a{ color: inherit; text-decoration: none;}
-   .menubox,ul{ background-color: antiquewhite; z-index: 999; color: #FFF0F5;}
+
+   .menubox,ul{ background-color: #3F5951; z-index: 997; color: #3F5951;}
    .menubox>ul { display: inline-block; background-color: #3F5951;}
-   .menubox{ color: rgb(255, 255, 255); position: fixed;  width: 100%;  text-align: left; z-index: 999; background-color: #3F5951;}
-   .menubox>ul>li{ display: inline-block; color:rgb(255, 255, 255);}
+   .menubox{ color: #3F5951;position: fixed;  width: 100%;  text-align: left; z-index: 999; background-color: #3F5951;}
+   .menubox>ul>li{ display: inline-block; color:#3F5951;}
    .menubox ul>li>a{   display: block;  font-weight: bold;  padding: 20px; }
    .menubox>ul li:hover>a{ background-color: rgb(254, 175, 40); color: white; }
    .menubox>ul ul{  position: absolute;  display: none; }
    .menubox ul>li:hover>ul{  background-color: #535945;  display: block; }
-   .logo{  font-weight: bolder;  font-size: larger; }  
+   .logo{  font-weight: bolder;  font-size: larger;color: white; }  
+
+#logoo{color: white;}
 
 
 body {margin: 0;background-color:  #D9BAA1; color: rgb(38, 51, 90); }
 html {min-height: 100%;}
-h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: black;}
+h2 {margin-top: 20%; width: 100%; font-size: 3rem; text-align: center; color: black;}
 .title {margin: 0%; width: 100%; text-align: center;}
 
 .bottom{
@@ -269,14 +277,14 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
   #fixed_layer1 {
     position:fixed;
     z-index:1000;
-    height:70px; width:50px;
-    bottom:30px; right:20px;
+    height:70px; width:20%;
+    bottom:30px; 
     }
     #fixed_layer2 {
     position:fixed;
     z-index:1000;
     height:70px; width:50px;
-    bottom:90px; right:20px;
+    bottom:90px;
     }
     #fixed_layer3 {position:fixed; z-index:1000; height:70px; width:90px; bottom:200px; right:10px; font-size: large; font-weight: bolder;}
     #fixed_layer4 {
@@ -307,7 +315,7 @@ h1 {margin-top: 0%; width: 100%; font-size: 3rem; text-align: center; color: bla
     }
         /* 공통 스타일 */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif; 
 }
   .text_big {
     color: white;
@@ -374,6 +382,8 @@ body {
     body {
       margin: 0;
     }
+h2{font-size: 25px;}
+h3{font-size: 18px;}
 
 /*---------팝업 설정------------*/
     #myModal {
