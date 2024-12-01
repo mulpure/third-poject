@@ -3,148 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title> 나는 누구일까요? </title>
-<style>
-    html {min-height: 100%;}
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-   }
-   a{
-    color: inherit;
-    text-decoration: none;
-   }
-   .menubox,ul{
-    background-color: #AFAFC7;
-   }
-   .menubox>ul {
-    display: inline-block;
-   }
-   .menubox{   z-index: 1000;
-    color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    text-align: left;
-   }
-   .menubox>ul>li{ display: inline-block; }
 
-   .menubox ul>li>a{ 
-    display: block;
-    font-weight: bold;
-    padding: 20px;
-   }
-   .menubox>ul li:hover>a{
-    background-color: rgb(248, 167, 54);
-    color: white;
-   }
-   .menubox>ul ul{
-    position: absolute;
-    display: none;
-   }
-   .menubox ul>li:hover>ul{
-    color: aliceblue;
-    background-color: darkolivegreen;
-    display: block;
-   }
-  
-   .logo{
-    font-weight: bolder;
-    font-size: larger;
-   }  
-
-#fixed_layer1 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:30px; right:20px;
-}
-#fixed_layer2 {
-position:fixed;
-z-index:1000;
-height:70px; width:50px;
-bottom:90px; right:20px;
-}
-#fixed_welcome{
-  position: fixed;
-  z-index: 1000;
-  height:70px; width:200px;
-  margin-top: 2px; right:5px;
-  font-weight: bolder;
-  font-size: larger;
-}
-
-body {margin: 0%;  }
-h1 {margin: 0%; }
-
-
-h1 { text-align: center; font-size: 55px;}
-body {background-color: #F7DFD3;}
-
-.frame1{ width: 700px;display: inline-block; margin-left: 80px; margin-top: 131px;  }
-   .photo1{ width: 700px;display: inline-block; margin-left: 80px; border-style: solid; border-color: #5F7DAE; height: 450px;}
-   .text1{font-weight: bolder; font-size: 50px; text-align: center; width: 700px; 
-    display: inline-block; margin-left: 80px; background-color: #E2C3C8;
-     color: #5F7DAE;border-style: solid; border-color: #5F7DAE; height: 90px; line-height: 90px; margin-top: 13px;}
-     .bottom{
-  margin-top: 200px;height: 200px; margin-bottom: 0px;width: 100%; background-color: rgb(145, 145, 145);
-}
-
-   
-  .slideshow-container { 
-    display: inline-block;
-    position: relative;
-      max-width: 100%;
-      margin-top: 0%;
-      margin: 0;
-      height: 700px;
-      background-color:  #cba687;
-      
-      
-  }
-
-  .mySlides {
-      display: none;
-      animation: slide 1.5s ease-in-out; 
-  }
-
-  img {
-      width: 70%;
-      height: 730px;
-      object-fit: cover;
-      margin-top: 60px;
-      margin-left: 30%;
-  }
-  .text-container {
-    position: absolute;
-    top: 70%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-  }
-
-  .text {
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-  }
-    @keyframes slide {
-        from {
-          left: 100%;
-          opacity: 0.4;
-        }
-  
-        to {
-          left: 0;
-          opacity: 1;
-        }
-      }
-      body {
-        margin: 0;
-      }
-
-</style>
-
+<link rel="stylesheet" href="첫화면.css"> 
 <!------------------------------------------>
 
 </head>
@@ -225,5 +85,6 @@ let slideIndex = 0;
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 5000); // 이미지 전환 시간 (2초)
   }</script>
+  
 </body>
 </html>
